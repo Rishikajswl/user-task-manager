@@ -1,0 +1,7 @@
+<h1>User Task Manager</h1>
+<a href="/add-user">Add User</a> | <a href="/add-task">Add Task</a> | <a href="/export">Export to Excel</a>
+<ul>
+  {{#each users}}
+    <li>{{this.name}} ({{this.email}}) - <a href="/user/{{this.id}}/tasks">View Tasks</a></li>
+  {{/each}}
+</ul>
